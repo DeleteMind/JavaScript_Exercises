@@ -1,10 +1,29 @@
-function CalculateLeapYear(year) {
-    const remainder = year % 4;
-    if (remainder === 0) {
+
+
+
+// First option
+
+
+function calculateLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
         return ("Leap Year");
     } else {
         return ("Not Leap Year");
     }
 }
 
-console.log(CalculateLeapYear(2048));
+console.log(calculateLeapYear(2024));
+
+
+
+
+// Another way to do it
+
+
+// function leapYear(year) {
+//     return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0 
+//     ? "Leap Year" 
+//     : "Not Leap Year";
+// }
+
+// console.log(leapYear(2000));
