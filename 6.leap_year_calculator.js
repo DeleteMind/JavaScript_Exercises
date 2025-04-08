@@ -12,7 +12,7 @@ function calculateLeapYear(year) {
     }
 }
 
-console.log(calculateLeapYear(2024));
+console.log(calculateLeapYear(1900));
 
 
 
